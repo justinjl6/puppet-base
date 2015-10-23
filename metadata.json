@@ -1,0 +1,17 @@
+{
+  "name": "justinjl-base",
+  "version": "0.1.0",
+  "author": "justinjl",
+  "summary": "Base OS Configurator",
+  "license": "Apache 2.0",
+  "source": "https://github.com/justinjl6/puppet-base/",
+  "project_page": "https://github.com/justinjl6/puppet-base/",
+  "issues_url": "https://github.com/justinjl6/puppet-base/issues",
+  "dependencies": [
+    {"name":"puppetlabs/stdlib","version_requirement":">= 1.0.0"},
+    {"name":"puppetlabs/ntp","version_requirement":">= 1.0.0"},
+    {"name":"saz-resolv_conf","version_requirement":">= 1.0.0"},
+    {"name":"saz-timezone","version_requirement":">= 1.0.0"}
+  ]
+}
+
