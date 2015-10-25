@@ -17,9 +17,9 @@ class base (
 
 ) {
 
-    anchor { '::base::begin' :   } ->
-    class  { '::base::dns' :     } ->
-    class  { '::base::ntp' :     } ->
-    anchor { '::base::end' :     }
+    anchor { '::base::begin' :  } ->
+    class  { '::base::dns' :    } ->
+    class  { '::base::ntp' :    } ->
+    anchor { '::base::end' :    }
 
 }

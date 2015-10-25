@@ -17,6 +17,8 @@ puppet modules such as puppetlabs-ntp and saz-resolv_conf.
 * Installs NTP service and ensures it runs (puppetlabs-ntp)
 * Configures system timezone (saz-timezone)
 * Configures system domain name and nameservers (saz-resolv_conf)
+* Uninstalls resolvconf package
+* Disables dhcp clients updating of resolv.conf
 
 ### Beginning with base
 
@@ -51,7 +53,7 @@ class { '::base' :
 
 ### Private classes
 
-* `base::dns`; Class to set system timezone, system domain and nameservers (via saz-timezone and saz-resolv_conf)
+* `base::dns`: Class to set system timezone, system domain and nameservers (via saz-timezone and saz-resolv_conf)
 * `base::ntp`: Class to install and configure the NTP service (via puppetlabs-ntp)
 
 ### Testing
